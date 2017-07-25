@@ -19,22 +19,39 @@ The base image is provisioned as follows:
 - [X]  [Shutter - screenshot utility](http://shutter-project.org/)
 - [X]  [Vokoscreen - screen recording utility](https://github.com/vkohaupt/vokoscreen)
 - [X]  [Google Chrome](https://www.google.com/chrome/index.html)
-- [X] Install [Atom](https://github.com/atom/atom)
+- [X]  [Atom - next gen editor](https://github.com/atom/atom)
 - [X]  [Git Cola - Git GUI utility](https://git-cola.github.io/)
-- [X] Install [Meld - Git confict solving tools](http://meldmerge.org/)
-- [X] Install [NVM](https://github.com/creationix/nvm)
+- [X]  [Meld - Git confict solving tools](http://meldmerge.org/)
+- [X]  [NVM - Node Version Manager](https://github.com/creationix/nvm)
 
 ## Todo
 
-- [ ] Re-test
+- [ ] Install node.js + npm
+- [ ] Re-test (erase -> full lifecycle)
 - [ ] Refactor shell script
 - [ ] [Universalize for other base images](https://github.com/dotless-de/vagrant-vbguest)
 
-## Setting Up
+## Management
 ### Useful Commands
-- TODO
+- Spin up the virtual environment (Vagrant-box)
 ```
-TODO
+vagrant up
+```
+- Provision the currently running environment
+```
+vagrant provision
+```
+- List the running environments
+```
+vagrant box list
+```
+- Stop a running environment
+```
+vagrant suspend
+```
+- Completely remove the environment
+```
+vagrant destroy
 ```
 
 ## License
