@@ -23,38 +23,42 @@ The base image is provisioned as follows:
 - [X]  [Meld - Git confict solving tools](http://meldmerge.org/)
 - [X]  [NVM - Node Version Manager](https://github.com/creationix/nvm)
 
-## Todo
-- [X] Re-test (erase -> full lifecycle)
-- [X] Refactor shell script
-- [ ] Add Spanish keyboard support
-- [ ] [Universalize for other base images](https://github.com/dotless-de/vagrant-vbguest)
-
 ## Management
-### Useful Commands
-- Spin up the virtual environment (Vagrant-box)
+### Box Mannagement Commands
+- Spin up the virtual environment (Vagrant-box). The environment is also provisioned:
 ```
 vagrant up
 ```
-- Provision the currently running environment
+- Provision the currently running environment:
 ```
 vagrant provision
 ```
-- List the running environments
+- List the running environments:
 ```
 vagrant box list
 ```
-- Stop a running environment
+- Stop a running environment:
 ```
 vagrant suspend
 ```
-- Completely remove the environment
+- Completely remove the environment:
 ```
 vagrant destroy
 ```
 ### Miscellaneous
-- Set the keyboard layout to Spanish
+- Start the graphical interface from command-line:
+```
+startx
+```
+- Set the keyboard layout to Spanish (session):
 ```
 setxkbmap -layout es
+```
+- Set the keyboard layout to Spanish (permanently). Reboot after:
+```
+apt-get install console-common
+localectl set-x11-keymap es
+localectl set-keymap es
 ```
 ## License
 MIT © [Alain Perkaz](https://aperkaz.github.io)
