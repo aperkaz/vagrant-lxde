@@ -11,7 +11,6 @@ The base image is provisioned as follows:
 - [X] [16.04 LTS 64-bit Ubuntu](https://bitbucket.org/janihur/ubuntu-1604-lxde-desktop)
 - [X] LXDE desktop environment
 - [X] Oracle VM [Guest additions](https://www.virtualbox.org/manual/ch04.html)
-- [X] English keyboard configuration
 
 ### Provisioned Programs
 - [X]  [Terminator - terminal emulator](https://wiki.archlinux.org/index.php/Terminator)
@@ -25,10 +24,9 @@ The base image is provisioned as follows:
 - [X]  [NVM - Node Version Manager](https://github.com/creationix/nvm)
 
 ## Todo
-
-- [ ] Install node.js + npm
-- [ ] Re-test (erase -> full lifecycle)
-- [ ] Refactor shell script
+- [X] Re-test (erase -> full lifecycle)
+- [X] Refactor shell script
+- [ ] Add Spanish keyboard support
 - [ ] [Universalize for other base images](https://github.com/dotless-de/vagrant-vbguest)
 
 ## Management
@@ -53,6 +51,10 @@ vagrant suspend
 ```
 vagrant destroy
 ```
-
+### Miscellaneous
+- Set the keyboard layout to Spanish
+```
+setxkbmap -layout es
+```
 ## License
 MIT © [Alain Perkaz](https://aperkaz.github.io)
