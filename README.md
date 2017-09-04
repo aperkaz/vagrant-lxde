@@ -8,11 +8,11 @@ Provide a portable, replicable and reliable working environment for professional
 The base image is provisioned as follows:
 
 ### Base image
-- [X] [16.04 LTS 64-bit Ubuntu](https://bitbucket.org/janihur/ubuntu-1604-lxde-desktop)
+- [X] [17.04 LTS 64-bit Ubuntu](http://releases.ubuntu.com/zesty/)
 - [X] LXDE desktop environment
 - [X] Oracle VM [Guest additions](https://www.virtualbox.org/manual/ch04.html)
 
-### Provisioned Programs
+### Installed Programs
 - [X]  [Terminator - terminal emulator](https://wiki.archlinux.org/index.php/Terminator)
 - [X]  [Kupfer - app launcher](https://github.com/kupferlauncher/kupfer)
 - [X]  [Shutter - screenshot utility](http://shutter-project.org/)
@@ -24,12 +24,12 @@ The base image is provisioned as follows:
 - [X]  [NVM - Node Version Manager](https://github.com/creationix/nvm)
 
 ## Management
-### Box Mannagement Commands
+### Box Management Commands
 - Spin up the virtual environment (Vagrant-box). The environment is also provisioned:
 ```
 vagrant up
 ```
-- Provision the currently running environment:
+- Provision the currently running environment (using `provision.sh` script):
 ```
 vagrant provision
 ```
