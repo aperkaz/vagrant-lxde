@@ -8,7 +8,7 @@ Provide a portable, replicable and reliable working environment for professional
 The base image is provisioned as follows:
 
 ### Base image
-- [X] [17.04 LTS 64-bit Ubuntu](http://releases.ubuntu.com/zesty/)
+- [X] [17.04 64-bit Ubuntu](http://releases.ubuntu.com/zesty/)
 - [X] LXDE desktop environment
 - [X] Oracle VM [Guest additions](https://www.virtualbox.org/manual/ch04.html)
 
